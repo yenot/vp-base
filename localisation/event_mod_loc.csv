@@ -1,0 +1,96 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.1;A terrible sickness in [From.GetName] has caused a drastic reduction in the local population and will take years to recover.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.1;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.2;Due to the recent damage of a city in the province of [From.GetName] people have begun to move to nearby cities in an attempt to escape the local troubles.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.2;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.3;Due to the recent major flood in the province of [From.GetName], and the great destruction it brought, people have begun to move to nearby cities in an attempt to escape the local troubles.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.3;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.4;Due to a recent avalanche in the province of [From.GetName], and the great destruction it brought, people have begun to move to nearby cities in an attempt to escape the local troubles.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.4;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.5;Due to the ongoing famine in the province of [From.GetName], and the great hardships it is bringing the population, people have begun to move to nearby cities in an attempt to escape the local troubles.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.5;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.6;Due to the prosperous state of the province of [From.GetName], and the great rewards it is bringing the population, people have begun to move from nearby cities in an attempt to take advantage of the good circumstances.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.6;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCwe_population_shifting.7;The population of [From.GetName] has increased.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTAwe_population_shifting.7;Okay;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+;;;;;;;;;;;;;;
+EVTDESCprovince_prosperity.15;Fire struck one of our country holdings, leaving only ruins on its way...;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.16;A flood in one of our provinces just destroyed many coastal villages!;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;
+EVTOPTAprovince_prosperity.0;OK;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.16;Argh!;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.15;We shall rebuild immediatly;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;
+EVTDESCprovince_prosperity.10;The Rain is continuing in [Root.GetName] and we haven't seen a blue sky for weeks. We need sufficient rain for our fields, but exessive rain will cause a bad crop in comming autumn.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.10;May [Root.Religion.GetRandomGodName] help us!;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.11;The weather in [Root.GetName] is extremely cold in this year. A cool summer is welcome, however poor people are dying at cold and peasants begin to worry about their crops in autumn.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.11;[Root.Religion.GetRandomGodName], please help us!;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.12;Because of bad weathers or deamon's work, the crops in [Root.GetName] is terrible in this year. We have to prepare the coming food shortage.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.12;Let's hope that we can survive this winter.;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.13;The bad crops brought a serious famine in [Root.GetName]! There is nothing to eat and the peasants sell their family as slave. They might be still happier than the people who have been dead at hungry.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.13;Buy foods and help poor peasants and citizens!;;;;;;;;;;;;;x
+EVTOPTBprovince_prosperity.13;Let them eat cake!;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.14;Thanks to the protection of [Root.Religion.GetRandomGodName], we had good crops in [Root.GetName]. We can hold a great harvest feast in this year!;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.14;We won't have to worry about the winter!;;;;;;;;;;;;;x
+EVTNAMEprovince_prosperity.17;The Great Famine of 1315-1317;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.17;The Great Famine of 1315?317 (occasionally dated 1315?322) was the first of a series of large scale crises that struck Northern Europe early in the fourteenth century. From the Pyrenees to Russia and from Scotland to Italy it caused millions of deaths over an extended number of years and marks a clear end to an earlier period of growth and prosperity during the eleventh to thirteenth centuries. Starting with bad weather in spring 1315, universal crop failures lasted through 1316 until summer harvest in 1317, Europe did not fully recover until 1325.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.17;This is dreadful news.;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.0;Inadequate soil preparation in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.1;Poor seed selection hurts farming in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.2;Lack of manure hurts farming in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.3;Lower mean temperature hurts farming in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.4;Arable land deserted in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.5;Draining of marshes and fens in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.6;Resettlement on newly claimed land in [Root.GetName].;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.7;Increased land productivity in [Root.GetName].;;;;;;;;;;;;;x
+EVTNAMEprovince_prosperity.8;Pillaging;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.8;Sieges could drag on for months and even years, and the besieging troops had to forage the countryside for supplies. These foraging parties could sometimes devolve into looting and outright vandalism. This was the case in [Root.Location.GetName], where our troops have have pillaged and torched one of the province's buildings.;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.8;It can't be helped;;;;;;;;;;;;;x
+EVTTOOLTIPprovince_prosperity.9;A building goes up in flames;;;;;;;;;;;;;x
+EVTDESCprovince_prosperity.9;The besieging troops have destroyed a building in [From.Location.GetName]!;;;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.9;Bastards!;;;;;;;;;;;;;x
+EVTNAMEprovince_prosperity.8;Pillaging;Pillage;Pl??rung;;;;;;;;;;;x
+EVTDESCprovince_prosperity.8;Sieges could drag on for months and even years, and the besieging troops had to forage the countryside for supplies. These foraging parties could sometimes devolve into looting and outright vandalism. This was the case in [Root.Location.GetName], where our troops have have pillaged and torched one of the province's buildings.;Les si?s pouvait se prolonger pendant des mois, voire des ann?, et les troupes qui assi?aient avaient besoin de vivres pour s'approvisionner. Ces recherches de nourriture pouvaient parfois se transformer en pillage et en vandalisme pur et simple. Ce fut le cas en [Root.Location.GetName], o??s troupes ont pill?t incendi?'un des b?ments de la province.;Belagerungen konnten sich ?? Monate und sogar Jahre hinziehen, und die belagernden Truppen mussten sich aus der Umgebung selbst versorgen. Diese Suche f??e manchmal auch zu Pl??rungen und Vandalismus. Dies war der Fall in [Root.Location.GetName], wo unsere Truppen gepl??rt und ein Geb?e in Brand gesteckt haben.;;;;;;;;;;;x
+EVTOPTAprovince_prosperity.8;It can't be helped;On ne peut rien y faire;Es konnte nicht geholfen werden;;;;;;;;;;;x
+EVTTOOLTIPprovince_prosperity.9;A building goes up in flames;Un b?ment prend feu;Ein Geb?e geht in Flammen auf;;;;;;;;;;;x
+;;;;;;;;;;;;;;
+pop_level_1_desc;This province has a population level of 1.;;;;;;;;;;;;;x
+pop_level_1;Population Level 1;;;;;;;;;;;;;x
+pop_level_2_desc;This province has a population level of 2.;;;;;;;;;;;;;x
+pop_level_2;Population Level 2;;;;;;;;;;;;;x
+pop_level_3_desc;This province has a population level of 3.;;;;;;;;;;;;;x
+pop_level_3;Population Level 3;;;;;;;;;;;;;x
+pop_level_4_desc;This province has a population level of 4.;;;;;;;;;;;;;x
+pop_level_4;Population Level 4;;;;;;;;;;;;;x
+pop_level_5_desc;This province has a population level of 5.;;;;;;;;;;;;;x
+pop_level_5;Population Level 5;;;;;;;;;;;;;x
+pop_level_6_desc;This province has a population level of 6.;;;;;;;;;;;;;x
+pop_level_6;Population Level 6;;;;;;;;;;;;;x
+pop_level_7_desc;This province has a population level of 7.;;;;;;;;;;;;;x
+pop_level_7;Population Level 7;;;;;;;;;;;;;x
+pop_level_8_desc;This province has a population level of 8.;;;;;;;;;;;;;x
+pop_level_8;Population Level 8;;;;;;;;;;;;;x
+pop_level_9_desc;This province has a population level of 9.;;;;;;;;;;;;;x
+pop_level_9;Population Level 9;;;;;;;;;;;;;x
+pop_level_10_desc;This province has a population level of 10.;;;;;;;;;;;;;x
+pop_level_10;Population Level 10;;;;;;;;;;;;;x
+pop_level_11_desc;This province has a population level of 11.;;;;;;;;;;;;;x
+pop_level_11;Population Level 11;;;;;;;;;;;;;x
+pop_level_12_desc;This province has a population level of 12.;;;;;;;;;;;;;x
+pop_level_12;Population Level 12;;;;;;;;;;;;;x
+pop_level_13_desc;This province has a population level of 13.;;;;;;;;;;;;;x
+pop_level_13;Population Level 13;;;;;;;;;;;;;x
+pop_level_14_desc;This province has a population level of 14.;;;;;;;;;;;;;x
+pop_level_14;Population Level 14;;;;;;;;;;;;;x
+pop_level_15_desc;This province has a population level of 15.;;;;;;;;;;;;;x
+pop_level_15;Population Level 15;;;;;;;;;;;;;x
+pop_level_16_desc;This province has a population level of 16.;;;;;;;;;;;;;x
+pop_level_16;Population Level 16;;;;;;;;;;;;;x
+pop_level_17_desc;This province has a population level of 17.;;;;;;;;;;;;;x
+pop_level_17;Population Level 17;;;;;;;;;;;;;x
+pop_level_18_desc;This province has a population level of 18.;;;;;;;;;;;;;x
+pop_level_18;Population Level 18;;;;;;;;;;;;;x
+pop_level_19_desc;This province has a population level of 19.;;;;;;;;;;;;;x
+pop_level_19;Population Level 19;;;;;;;;;;;;;x
+pop_level_20_desc;This province has a population level of 20.;;;;;;;;;;;;;x
+pop_level_20;Population Level 20;;;;;;;;;;;;;x

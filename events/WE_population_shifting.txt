@@ -1,0 +1,1959 @@
+namespace = we_population_shifting
+
+province_event = {
+	id = we_population_shifting.1
+	desc = EVTDESCwe_population_shifting.1
+	
+	mean_time_to_happen = { 
+		months = 5 
+		modifier = {
+			factor = 0.1
+			has_province_modifier = serious_famine
+		}
+		modifier = {
+			factor = 0.25
+			has_province_modifier = province_poverty_2
+		}
+		modifier = {
+			factor = 0.5
+			has_province_modifier = province_poverty_1
+		}
+		modifier = {
+			factor = 2
+			has_province_modifier = province_prosperity_1
+		}
+		modifier = {
+			factor = 4
+			has_province_modifier = province_prosperity_2
+		}
+	}
+	
+	trigger = {
+		has_disease = yes
+		NOT = { has_province_modifier = population_sickness_timer }
+		NOT = { has_province_modifier = pop_level_1 }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_sickness_timer duration = 3650 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.1
+		if = {
+			limit = {
+				has_province_modifier = pop_level_20
+			}
+			remove_province_modifier = pop_level_20
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_1 duration = -1 }
+			break = yes
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.2
+	desc = EVTDESCwe_population_shifting.2
+	
+	mean_time_to_happen = { 
+		months = 5 
+		modifier = {
+			factor = 0.1
+			has_province_modifier = serious_famine
+		}
+		modifier = {
+			factor = 0.25
+			has_province_modifier = province_poverty_2
+		}
+		modifier = {
+			factor = 0.5
+			has_province_modifier = province_poverty_1
+		}
+		modifier = {
+			factor = 2
+			has_province_modifier = province_prosperity_1
+		}
+		modifier = {
+			factor = 4
+			has_province_modifier = province_prosperity_2
+		}
+	}
+	
+	trigger = {
+		has_province_modifier = city_burned
+	}
+	
+	immediate = {
+		remove_province_modifier = city_burned
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.2
+		random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = pop_level_20 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_19
+				}
+				remove_province_modifier = pop_level_19
+				add_province_modifier = { name = pop_level_20 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_18
+				}
+				remove_province_modifier = pop_level_18
+				add_province_modifier = { name = pop_level_19 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_17
+				}
+				remove_province_modifier = pop_level_17
+				add_province_modifier = { name = pop_level_18 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_16
+				}
+				remove_province_modifier = pop_level_16
+				add_province_modifier = { name = pop_level_17 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_15
+				}
+				remove_province_modifier = pop_level_15
+				add_province_modifier = { name = pop_level_16 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_14
+				}
+				remove_province_modifier = pop_level_14
+				add_province_modifier = { name = pop_level_15 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_13
+				}
+				remove_province_modifier = pop_level_13
+				add_province_modifier = { name = pop_level_14 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_12
+				}
+				remove_province_modifier = pop_level_12
+				add_province_modifier = { name = pop_level_13 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_11
+				}
+				remove_province_modifier = pop_level_11
+				add_province_modifier = { name = pop_level_12 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_10
+				}
+				remove_province_modifier = pop_level_10
+				add_province_modifier = { name = pop_level_11 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_9
+				}
+				remove_province_modifier = pop_level_9
+				add_province_modifier = { name = pop_level_10 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_8
+				}
+				remove_province_modifier = pop_level_8
+				add_province_modifier = { name = pop_level_9 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_7
+				}
+				remove_province_modifier = pop_level_7
+				add_province_modifier = { name = pop_level_8 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_6
+				}
+				remove_province_modifier = pop_level_6
+				add_province_modifier = { name = pop_level_7 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_5
+				}
+				remove_province_modifier = pop_level_5
+				add_province_modifier = { name = pop_level_6 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_4
+				}
+				remove_province_modifier = pop_level_4
+				add_province_modifier = { name = pop_level_5 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_3
+				}
+				remove_province_modifier = pop_level_3
+				add_province_modifier = { name = pop_level_4 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_2
+				}
+				remove_province_modifier = pop_level_2
+				add_province_modifier = { name = pop_level_3 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_1
+				}
+				remove_province_modifier = pop_level_1
+				add_province_modifier = { name = pop_level_2 duration = -1 }
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_20
+			}
+			remove_province_modifier = pop_level_20
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_1 duration = -1 }
+			break = yes
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.3
+	desc = EVTDESCwe_population_shifting.3
+	
+	mean_time_to_happen = { 
+		days = 3650
+	}
+	
+	trigger = {
+		port = yes
+		NOT = { has_province_modifier = pop_level_1 }
+		NOT = { has_province_modifier = population_flood_timer }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_flood_timer duration = 3650 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.3
+		random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = pop_level_20 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_19
+				}
+				remove_province_modifier = pop_level_19
+				add_province_modifier = { name = pop_level_20 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_18
+				}
+				remove_province_modifier = pop_level_18
+				add_province_modifier = { name = pop_level_19 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_17
+				}
+				remove_province_modifier = pop_level_17
+				add_province_modifier = { name = pop_level_18 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_16
+				}
+				remove_province_modifier = pop_level_16
+				add_province_modifier = { name = pop_level_17 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_15
+				}
+				remove_province_modifier = pop_level_15
+				add_province_modifier = { name = pop_level_16 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_14
+				}
+				remove_province_modifier = pop_level_14
+				add_province_modifier = { name = pop_level_15 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_13
+				}
+				remove_province_modifier = pop_level_13
+				add_province_modifier = { name = pop_level_14 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_12
+				}
+				remove_province_modifier = pop_level_12
+				add_province_modifier = { name = pop_level_13 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_11
+				}
+				remove_province_modifier = pop_level_11
+				add_province_modifier = { name = pop_level_12 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_10
+				}
+				remove_province_modifier = pop_level_10
+				add_province_modifier = { name = pop_level_11 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_9
+				}
+				remove_province_modifier = pop_level_9
+				add_province_modifier = { name = pop_level_10 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_8
+				}
+				remove_province_modifier = pop_level_8
+				add_province_modifier = { name = pop_level_9 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_7
+				}
+				remove_province_modifier = pop_level_7
+				add_province_modifier = { name = pop_level_8 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_6
+				}
+				remove_province_modifier = pop_level_6
+				add_province_modifier = { name = pop_level_7 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_5
+				}
+				remove_province_modifier = pop_level_5
+				add_province_modifier = { name = pop_level_6 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_4
+				}
+				remove_province_modifier = pop_level_4
+				add_province_modifier = { name = pop_level_5 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_3
+				}
+				remove_province_modifier = pop_level_3
+				add_province_modifier = { name = pop_level_4 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_2
+				}
+				remove_province_modifier = pop_level_2
+				add_province_modifier = { name = pop_level_3 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_1
+				}
+				remove_province_modifier = pop_level_1
+				add_province_modifier = { name = pop_level_2 duration = -1 }
+			}
+		}
+		random_province_holding ={
+			limit = {
+				holding_type = city
+			}
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_20
+			}
+			remove_province_modifier = pop_level_20
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_1 duration = -1 }
+			break = yes
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.4
+	desc = EVTDESCwe_population_shifting.4
+	
+	mean_time_to_happen = { 
+		days = 7300
+	}
+	
+	trigger = {
+		terrain = mountain
+		NOT = { has_province_modifier = pop_level_1 }
+		NOT = { has_province_modifier = population_avalanche_timer }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_avalanche_timer duration = 7300 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.4
+		random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = pop_level_20 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_19
+				}
+				remove_province_modifier = pop_level_19
+				add_province_modifier = { name = pop_level_20 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_18
+				}
+				remove_province_modifier = pop_level_18
+				add_province_modifier = { name = pop_level_19 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_17
+				}
+				remove_province_modifier = pop_level_17
+				add_province_modifier = { name = pop_level_18 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_16
+				}
+				remove_province_modifier = pop_level_16
+				add_province_modifier = { name = pop_level_17 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_15
+				}
+				remove_province_modifier = pop_level_15
+				add_province_modifier = { name = pop_level_16 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_14
+				}
+				remove_province_modifier = pop_level_14
+				add_province_modifier = { name = pop_level_15 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_13
+				}
+				remove_province_modifier = pop_level_13
+				add_province_modifier = { name = pop_level_14 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_12
+				}
+				remove_province_modifier = pop_level_12
+				add_province_modifier = { name = pop_level_13 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_11
+				}
+				remove_province_modifier = pop_level_11
+				add_province_modifier = { name = pop_level_12 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_10
+				}
+				remove_province_modifier = pop_level_10
+				add_province_modifier = { name = pop_level_11 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_9
+				}
+				remove_province_modifier = pop_level_9
+				add_province_modifier = { name = pop_level_10 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_8
+				}
+				remove_province_modifier = pop_level_8
+				add_province_modifier = { name = pop_level_9 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_7
+				}
+				remove_province_modifier = pop_level_7
+				add_province_modifier = { name = pop_level_8 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_6
+				}
+				remove_province_modifier = pop_level_6
+				add_province_modifier = { name = pop_level_7 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_5
+				}
+				remove_province_modifier = pop_level_5
+				add_province_modifier = { name = pop_level_6 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_4
+				}
+				remove_province_modifier = pop_level_4
+				add_province_modifier = { name = pop_level_5 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_3
+				}
+				remove_province_modifier = pop_level_3
+				add_province_modifier = { name = pop_level_4 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_2
+				}
+				remove_province_modifier = pop_level_2
+				add_province_modifier = { name = pop_level_3 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_1
+				}
+				remove_province_modifier = pop_level_1
+				add_province_modifier = { name = pop_level_2 duration = -1 }
+			}
+		}
+		random_province_holding ={
+			limit = {
+				holding_type = city
+			}
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+			destroy_random_building = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_20
+			}
+			remove_province_modifier = pop_level_20
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_1 duration = -1 }
+			break = yes
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.5
+	desc = EVTDESCwe_population_shifting.5
+	
+	mean_time_to_happen = { 
+		days = 3650
+	}
+	
+	trigger = {
+		NOT = { has_province_modifier = pop_level_1 }
+		has_province_modifier = serious_famine
+		NOT = { has_province_modifier = population_serious_famine_timer }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_serious_famine_timer duration = 3650 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.5
+		random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = pop_level_20 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_19
+				}
+				remove_province_modifier = pop_level_19
+				add_province_modifier = { name = pop_level_20 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_18
+				}
+				remove_province_modifier = pop_level_18
+				add_province_modifier = { name = pop_level_19 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_17
+				}
+				remove_province_modifier = pop_level_17
+				add_province_modifier = { name = pop_level_18 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_16
+				}
+				remove_province_modifier = pop_level_16
+				add_province_modifier = { name = pop_level_17 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_15
+				}
+				remove_province_modifier = pop_level_15
+				add_province_modifier = { name = pop_level_16 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_14
+				}
+				remove_province_modifier = pop_level_14
+				add_province_modifier = { name = pop_level_15 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_13
+				}
+				remove_province_modifier = pop_level_13
+				add_province_modifier = { name = pop_level_14 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_12
+				}
+				remove_province_modifier = pop_level_12
+				add_province_modifier = { name = pop_level_13 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_11
+				}
+				remove_province_modifier = pop_level_11
+				add_province_modifier = { name = pop_level_12 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_10
+				}
+				remove_province_modifier = pop_level_10
+				add_province_modifier = { name = pop_level_11 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_9
+				}
+				remove_province_modifier = pop_level_9
+				add_province_modifier = { name = pop_level_10 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_8
+				}
+				remove_province_modifier = pop_level_8
+				add_province_modifier = { name = pop_level_9 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_7
+				}
+				remove_province_modifier = pop_level_7
+				add_province_modifier = { name = pop_level_8 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_6
+				}
+				remove_province_modifier = pop_level_6
+				add_province_modifier = { name = pop_level_7 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_5
+				}
+				remove_province_modifier = pop_level_5
+				add_province_modifier = { name = pop_level_6 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_4
+				}
+				remove_province_modifier = pop_level_4
+				add_province_modifier = { name = pop_level_5 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_3
+				}
+				remove_province_modifier = pop_level_3
+				add_province_modifier = { name = pop_level_4 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_2
+				}
+				remove_province_modifier = pop_level_2
+				add_province_modifier = { name = pop_level_3 duration = -1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_1
+				}
+				remove_province_modifier = pop_level_1
+				add_province_modifier = { name = pop_level_2 duration = -1 }
+			}
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_20
+			}
+			remove_province_modifier = pop_level_20
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_1 duration = -1 }
+			break = yes
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.6
+	desc = EVTDESCwe_population_shifting.6
+	
+	mean_time_to_happen = { 
+		days = 5475
+		modifier = {
+			factor = 0.5
+			has_province_modifier = province_prosperity_2
+		}
+	}
+	
+	trigger = {
+		NOT = { has_province_modifier = pop_level_20 }
+		OR = {
+			has_province_modifier = province_prosperity_1
+			has_province_modifier = province_prosperity_2
+		}
+		NOT = { has_province_modifier = population_prosperity_timer }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_prosperity_timer duration = 5475 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.6
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_20 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_1
+			}
+			remove_province_modifier = pop_level_1
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+		}
+		random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = pop_level_1 }
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_20
+				}
+				remove_province_modifier = pop_level_20
+				add_province_modifier = { name = pop_level_19 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_19
+				}
+				remove_province_modifier = pop_level_19
+				add_province_modifier = { name = pop_level_18 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_18
+				}
+				remove_province_modifier = pop_level_18
+				add_province_modifier = { name = pop_level_17 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_17
+				}
+				remove_province_modifier = pop_level_17
+				add_province_modifier = { name = pop_level_16 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_16
+				}
+				remove_province_modifier = pop_level_16
+				add_province_modifier = { name = pop_level_15 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_15
+				}
+				remove_province_modifier = pop_level_15
+				add_province_modifier = { name = pop_level_14 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_14
+				}
+				remove_province_modifier = pop_level_14
+				add_province_modifier = { name = pop_level_13 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_13
+				}
+				remove_province_modifier = pop_level_13
+				add_province_modifier = { name = pop_level_12 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_12
+				}
+				remove_province_modifier = pop_level_12
+				add_province_modifier = { name = pop_level_11 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_11
+				}
+				remove_province_modifier = pop_level_11
+				add_province_modifier = { name = pop_level_10 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_10
+				}
+				remove_province_modifier = pop_level_10
+				add_province_modifier = { name = pop_level_9 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_9
+				}
+				remove_province_modifier = pop_level_9
+				add_province_modifier = { name = pop_level_8 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_8
+				}
+				remove_province_modifier = pop_level_8
+				add_province_modifier = { name = pop_level_7 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_7
+				}
+				remove_province_modifier = pop_level_7
+				add_province_modifier = { name = pop_level_6 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_6
+				}
+				remove_province_modifier = pop_level_6
+				add_province_modifier = { name = pop_level_5 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_5
+				}
+				remove_province_modifier = pop_level_5
+				add_province_modifier = { name = pop_level_4 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_4
+				}
+				remove_province_modifier = pop_level_4
+				add_province_modifier = { name = pop_level_3 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_3
+				}
+				remove_province_modifier = pop_level_3
+				add_province_modifier = { name = pop_level_2 duration = -1 }
+				break = yes
+			}
+			if = {
+				limit = {
+					has_province_modifier = pop_level_2
+				}
+				remove_province_modifier = pop_level_2
+				add_province_modifier = { name = pop_level_1 duration = -1 }
+				break = yes
+			}
+		}
+	}
+}
+province_event = {
+	id = we_population_shifting.7
+	desc = EVTDESCwe_population_shifting.7
+	
+	mean_time_to_happen = { 
+		days = 7300
+	}
+	
+	trigger = {
+		NOT = { has_province_modifier = pop_level_20 }
+		NOT = { has_province_modifier = population_growth_timer }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = population_growth_timer duration = 7300 hidden = yes }
+	}
+	
+	option = {
+		name = EVTOPTAwe_population_shifting.7
+		if = {
+			limit = {
+				has_province_modifier = pop_level_19
+			}
+			remove_province_modifier = pop_level_19
+			add_province_modifier = { name = pop_level_20 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_18
+			}
+			remove_province_modifier = pop_level_18
+			add_province_modifier = { name = pop_level_19 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_17
+			}
+			remove_province_modifier = pop_level_17
+			add_province_modifier = { name = pop_level_18 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_16
+			}
+			remove_province_modifier = pop_level_16
+			add_province_modifier = { name = pop_level_17 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_15
+			}
+			remove_province_modifier = pop_level_15
+			add_province_modifier = { name = pop_level_16 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_14
+			}
+			remove_province_modifier = pop_level_14
+			add_province_modifier = { name = pop_level_15 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_13
+			}
+			remove_province_modifier = pop_level_13
+			add_province_modifier = { name = pop_level_14 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_12
+			}
+			remove_province_modifier = pop_level_12
+			add_province_modifier = { name = pop_level_13 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_11
+			}
+			remove_province_modifier = pop_level_11
+			add_province_modifier = { name = pop_level_12 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_10
+			}
+			remove_province_modifier = pop_level_10
+			add_province_modifier = { name = pop_level_11 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_9
+			}
+			remove_province_modifier = pop_level_9
+			add_province_modifier = { name = pop_level_10 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_8
+			}
+			remove_province_modifier = pop_level_8
+			add_province_modifier = { name = pop_level_9 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_7
+			}
+			remove_province_modifier = pop_level_7
+			add_province_modifier = { name = pop_level_8 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_6
+			}
+			remove_province_modifier = pop_level_6
+			add_province_modifier = { name = pop_level_7 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_5
+			}
+			remove_province_modifier = pop_level_5
+			add_province_modifier = { name = pop_level_6 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_4
+			}
+			remove_province_modifier = pop_level_4
+			add_province_modifier = { name = pop_level_5 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_3
+			}
+			remove_province_modifier = pop_level_3
+			add_province_modifier = { name = pop_level_4 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_2
+			}
+			remove_province_modifier = pop_level_2
+			add_province_modifier = { name = pop_level_3 duration = -1 }
+		}
+		if = {
+			limit = {
+				has_province_modifier = pop_level_1
+			}
+			remove_province_modifier = pop_level_1
+			add_province_modifier = { name = pop_level_2 duration = -1 }
+		}
+	}
+}

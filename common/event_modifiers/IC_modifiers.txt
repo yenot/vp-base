@@ -1,0 +1,225 @@
+#Population
+pop_level_20 = {
+	levy_size = 12.5
+	local_tax_modifier = 1.25
+	disease_defence = -0.25
+	icon = 68
+}
+pop_level_19 = {
+	levy_size = 11
+	local_tax_modifier = 1.22
+	disease_defence = -0.22
+	icon = 67
+}
+pop_level_18 = {
+	levy_size = 10
+	local_tax_modifier = 1
+	disease_defence = -0.20
+	icon = 66
+}
+pop_level_17 = {
+	levy_size = 9
+	local_tax_modifier = 0.85
+	disease_defence = -0.18
+	icon = 65
+}
+pop_level_16 = {
+	levy_size = 8
+	local_tax_modifier = 0.8
+	disease_defence = -0.16
+	icon = 64
+}
+pop_level_15 = {
+	levy_size = 7.5
+	local_tax_modifier = 0.75
+	disease_defence = -0.15
+	icon = 63
+}
+pop_level_14 = {
+	levy_size = 7
+	local_tax_modifier = 0.7
+	disease_defence = -0.14
+	icon = 62
+}
+pop_level_13 = {
+	levy_size = 6.5
+	local_tax_modifier = 0.65
+	disease_defence = -0.13
+	icon = 61
+}
+pop_level_12 = {
+	levy_size = 12
+	local_tax_modifier = 0.6
+	disease_defence = -0.12
+	icon = 60
+}
+pop_level_11 = {
+	levy_size = 5.5
+	local_tax_modifier = 0.55
+	disease_defence = -0.11
+	icon = 59
+}
+pop_level_10 = {
+	levy_size = 5
+	local_tax_modifier = 0.5
+	disease_defence = -0.1
+	icon = 58
+}
+pop_level_9 = {
+	levy_size = 4.5
+	local_tax_modifier = 0.45
+	disease_defence = -0.09
+	icon = 57
+}
+pop_level_8 = {
+	levy_size = 4
+	local_tax_modifier = 0.4
+	disease_defence = -0.08
+	icon = 56
+}
+pop_level_7 = {
+	levy_size = 3.5
+	local_tax_modifier = 0.35
+	disease_defence = -0.07
+	icon = 55
+}
+pop_level_6 = {
+	levy_size = 3
+	local_tax_modifier = 0.3
+	disease_defence = -0.06
+	icon = 54
+}
+pop_level_5 = {
+	levy_size = 2.5
+	local_tax_modifier = 0.25
+	disease_defence = -0.05
+	icon = 53
+}
+pop_level_4 = {
+	levy_size = 2
+	local_tax_modifier = 0.2
+	disease_defence = -0.04
+	icon = 52
+}
+pop_level_3 = {
+	levy_size = 1.5
+	local_tax_modifier = 0.15
+	disease_defence = -0.03
+	icon = 51
+}
+pop_level_2 = {
+	levy_size = 1
+	local_tax_modifier = 0.1
+	disease_defence = -0.02
+	icon = 50
+}
+pop_level_1 = {
+	levy_size = 0.5
+	local_tax_modifier = 0.05
+	disease_defence = -0.01
+	icon = 49
+}
+
+###############################################################
+#
+# The Prince and the Thane event modifiers - written by idib816
+#
+###############################################################
+
+long_rain = {
+	disease_defence = -0.25
+	local_build_time_modifier = 1
+	local_build_cost_modifier = 0.25
+	icon = 22
+}
+
+cold_weather = {
+	disease_defence = -0.25
+	supply_limit = -1
+	castle_levy_size = -0.2
+	city_levy_size = -0.2
+	temple_levy_size = -0.2
+	icon = 22
+}
+
+bad_crops = {
+	city_tax_modifier = -0.4
+	castle_tax_modifier = -0.8
+	temple_tax_modifier = -0.6
+	icon = 22
+}
+
+serious_famine = {
+	disease_defence = -1
+	supply_limit = -2
+	castle_levy_size = -0.3
+	city_levy_size = -0.3
+	temple_levy_size = -0.3
+	local_revolt_risk = 0.05
+	icon = 22
+}
+
+good_crops = {
+	city_tax_modifier = 0.4
+	castle_tax_modifier = 0.8
+	temple_tax_modifier = 0.6
+	icon = 4
+}
+
+province_poverty_2 = {
+	city_tax_modifier = -0.2
+	castle_tax_modifier = -0.2
+	temple_tax_modifier = -0.2
+	levy_size = -0.1
+	local_revolt_risk = 0.02
+	icon = 22
+}
+
+province_poverty_1 = {
+	city_tax_modifier = -0.1
+	castle_tax_modifier = -0.1
+	temple_tax_modifier = -0.1
+	levy_size = -0.05
+	local_revolt_risk = 0.01
+	icon = 22
+}
+
+province_prosperity_1 = {
+	city_tax_modifier = 0.1
+	castle_tax_modifier = 0.1
+	temple_tax_modifier = 0.1
+	levy_size = 0.05
+	local_revolt_risk = -0.01
+	icon = 4	
+}
+
+province_prosperity_2 = {
+	city_tax_modifier = 0.2
+	castle_tax_modifier = 0.2
+	temple_tax_modifier = 0.2
+	levy_size = 0.1
+	local_revolt_risk = -0.02
+	icon = 4	
+}
+
+population_sickness_timer = { 
+	icon = 1 
+}	
+city_burned = { 
+	icon = 1 
+}
+population_flood_timer = { 
+	icon = 1 
+}
+population_avalanche_timer = { 
+	icon = 1 
+}
+population_serious_famine_timer = { 
+	icon = 1 
+}
+population_prosperity_timer = { 
+	icon = 1 
+}
+population_growth_timer = { 
+	icon = 1 
+}		

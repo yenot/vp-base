@@ -1,0 +1,168 @@
+namespace = icstartup
+
+character_event = {
+	id = icstartup.1
+	desc = EVTDESCicstartup.1
+	
+	hide_window = yes
+	
+	#only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		year = 700
+	}
+	
+	option = {
+		name = "EVTOPTAcstartup1"
+		if = {
+			limit = {
+				ROOT = {
+					any_demesne_title = {
+						has_title_flag = startup_refill
+					}
+				}
+			}
+			break = yes
+		}
+		set_global_flag = startup_refill
+		ROOT = {
+			
+			
+			any_demesne_title = {
+				limit = { 
+					tier = baron
+					is_capital = yes
+					holder_scope = {
+						primary_title = {
+							tier = king
+						}
+					}
+				}
+				if = {
+					limit = { #20 total
+						location = {
+							NOT = { has_province_modifier = pop_level_20 }
+							NOT = { has_province_modifier = pop_level_19 }
+							NOT = { has_province_modifier = pop_level_18 }
+							NOT = { has_province_modifier = pop_level_17 }
+							NOT = { has_province_modifier = pop_level_16 }
+							NOT = { has_province_modifier = pop_level_15 }
+							NOT = { has_province_modifier = pop_level_14 }
+							NOT = { has_province_modifier = pop_level_13 }
+							NOT = { has_province_modifier = pop_level_12 }
+							NOT = { has_province_modifier = pop_level_11 }
+							NOT = { has_province_modifier = pop_level_10 }
+							NOT = { has_province_modifier = pop_level_9 }
+							NOT = { has_province_modifier = pop_level_8 }
+							NOT = { has_province_modifier = pop_level_7 }
+							NOT = { has_province_modifier = pop_level_6 }
+							NOT = { has_province_modifier = pop_level_5 }
+							NOT = { has_province_modifier = pop_level_4 }
+							NOT = { has_province_modifier = pop_level_3 }
+							NOT = { has_province_modifier = pop_level_2 }
+							NOT = { has_province_modifier = pop_level_1 }
+						}
+					}
+					location = {
+						random_list = {
+							10 = { add_province_modifier = { modifier = pop_level_3 duration = -1 } } 
+							15 = { add_province_modifier = { modifier = pop_level_4 duration = -1 } } 
+							50 = { add_province_modifier = { modifier = pop_level_5 duration = -1 } } 
+							15 = { add_province_modifier = { modifier = pop_level_6 duration = -1 } } 
+							10 = { add_province_modifier = { modifier = pop_level_7 duration = -1 } } 
+						}
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = { 
+					tier = baron
+					is_capital = yes
+					holder_scope = {
+						primary_title = {
+							tier = duke
+						}
+					}
+				}
+				if = {
+					limit = { #20 total
+						location = {
+							NOT = { has_province_modifier = pop_level_20 }
+							NOT = { has_province_modifier = pop_level_19 }
+							NOT = { has_province_modifier = pop_level_18 }
+							NOT = { has_province_modifier = pop_level_17 }
+							NOT = { has_province_modifier = pop_level_16 }
+							NOT = { has_province_modifier = pop_level_15 }
+							NOT = { has_province_modifier = pop_level_14 }
+							NOT = { has_province_modifier = pop_level_13 }
+							NOT = { has_province_modifier = pop_level_12 }
+							NOT = { has_province_modifier = pop_level_11 }
+							NOT = { has_province_modifier = pop_level_10 }
+							NOT = { has_province_modifier = pop_level_9 }
+							NOT = { has_province_modifier = pop_level_8 }
+							NOT = { has_province_modifier = pop_level_7 }
+							NOT = { has_province_modifier = pop_level_6 }
+							NOT = { has_province_modifier = pop_level_5 }
+							NOT = { has_province_modifier = pop_level_4 }
+							NOT = { has_province_modifier = pop_level_3 }
+							NOT = { has_province_modifier = pop_level_2 }
+							NOT = { has_province_modifier = pop_level_1 }
+						}
+					}
+					location = {
+						random_list = {
+							15 = { add_province_modifier = { modifier = pop_level_3 duration = -1 } } 
+							20 = { add_province_modifier = { modifier = pop_level_4 duration = -1 } } 
+							30 = { add_province_modifier = { modifier = pop_level_5 duration = -1 } } 
+							20 = { add_province_modifier = { modifier = pop_level_6 duration = -1 } } 
+							15 = { add_province_modifier = { modifier = pop_level_7 duration = -1 } } 
+						}
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = { 
+					tier = COUNT
+				}
+				if = {
+					limit = { #20 total
+						location = {
+							NOT = { has_province_modifier = pop_level_20 }
+							NOT = { has_province_modifier = pop_level_19 }
+							NOT = { has_province_modifier = pop_level_18 }
+							NOT = { has_province_modifier = pop_level_17 }
+							NOT = { has_province_modifier = pop_level_16 }
+							NOT = { has_province_modifier = pop_level_15 }
+							NOT = { has_province_modifier = pop_level_14 }
+							NOT = { has_province_modifier = pop_level_13 }
+							NOT = { has_province_modifier = pop_level_12 }
+							NOT = { has_province_modifier = pop_level_11 }
+							NOT = { has_province_modifier = pop_level_10 }
+							NOT = { has_province_modifier = pop_level_9 }
+							NOT = { has_province_modifier = pop_level_8 }
+							NOT = { has_province_modifier = pop_level_7 }
+							NOT = { has_province_modifier = pop_level_6 }
+							NOT = { has_province_modifier = pop_level_5 }
+							NOT = { has_province_modifier = pop_level_4 }
+							NOT = { has_province_modifier = pop_level_3 }
+							NOT = { has_province_modifier = pop_level_2 }
+							NOT = { has_province_modifier = pop_level_1 }
+						}
+					}
+					location = {
+						random_list = {
+							35 = { add_province_modifier = { modifier = pop_level_3 duration = -1 } } 
+							35 = { add_province_modifier = { modifier = pop_level_4 duration = -1 } } 
+							15 = { add_province_modifier = { modifier = pop_level_5 duration = -1 } } 
+							10 = { add_province_modifier = { modifier = pop_level_6 duration = -1 } } 
+							5 = { add_province_modifier = { modifier = pop_level_7 duration = -1 } } 
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

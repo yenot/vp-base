@@ -1,0 +1,23 @@
+
+on_startup = {
+	events = {
+		icstartup.1 #Population seed
+	}
+}
+
+on_decade_pulse = {
+	random_events = {
+		#Prince and Thane climate related events
+        20 = province_prosperity.15 
+        20 = province_prosperity.16
+        1 = province_prosperity.17
+	}
+}
+
+
+on_siege_pulse = {
+	random_events = {
+		#Prince and Thane events
+		100 = province_prosperity.8 #Building gets sacked
+	}
+}
